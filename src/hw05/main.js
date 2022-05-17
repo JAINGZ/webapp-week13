@@ -21,7 +21,18 @@ function get_has3(dat) {
     return dat.filter(has3);
 }
 
-function get_prime(dat) {}
+function get_prime(dat) {
+    let s =[]
+    for(let i=0;i<data.length;i++){
+        if(data[i]==2 |data[i]==3|data[i]==5|data[i]==7 ){
+            s.push(data[i])
+        }
+        if(data[i]%2 != 0 & data[i]%3 != 0& data[i]%5 != 0& data[i]%7 != 0 & data[i] != 1){
+            s.push(data[i])
+        }
+    }
+        return s;
+}
 
 function main() {
     console.log(`get_gt10(data) => ${get_gt10(data)}`);
